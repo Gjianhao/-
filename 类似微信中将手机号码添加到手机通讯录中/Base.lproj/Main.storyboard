@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEs-pe-3IJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="8ji-mc-C7L"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="SLM-bB-2vC"/>
+                                    <constraint firstAttribute="width" constant="100" id="ygK-dU-zrN"/>
+                                </constraints>
+                                <state key="normal" title="18888888888"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ygK-dU-zrN"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="btnNumClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="abJ-sl-hHS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gEs-pe-3IJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0W0-tB-HTo"/>
+                            <constraint firstItem="gEs-pe-3IJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UtX-bb-4iY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnNum" destination="gEs-pe-3IJ" id="aFC-s4-qFx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="388"/>
+        </scene>
+    </scenes>
+</document>
